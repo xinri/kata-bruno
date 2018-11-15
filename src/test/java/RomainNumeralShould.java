@@ -1,4 +1,3 @@
-import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 import org.junit.Test;
@@ -47,6 +46,7 @@ public class RomainNumeralShould {
     String actual = romainNumeral.convert(6);
     assertThat(actual).isEqualTo("VI");
   }
+
   @Test
   public void return_VII_when_input_7() {
     RomainNumeral romainNumeral = new RomainNumeral();
@@ -67,4 +67,33 @@ public class RomainNumeralShould {
     String actual = romainNumeral.convert(10);
     assertThat(actual).isEqualTo("X");
   }
+
+  @Test
+  public void return_XIV_when_input_14() {
+    RomainNumeral romainNumeral = new RomainNumeral();
+    String actual = romainNumeral.convert(14);
+    assertThat(actual).isEqualTo("XIV");
+  }
+
+  @Test
+  public void return_XV_when_input_15() {
+    RomainNumeral romainNumeral = new RomainNumeral();
+    String actual = romainNumeral.convert(15);
+    assertThat(actual).isEqualTo("XV");
+  }
+
+  @Test
+  public void return_XXIV_when_input_24() {
+    RomainNumeral romainNumeral = new RomainNumeral();
+    String actual = romainNumeral.convert(24);
+    assertThat(actual).isEqualTo("XXIV");
+  }
+
+  @Test
+  public void return_XL_when_input_40() {
+    RomainNumeral romainNumeral = new RomainNumeral();
+    String actual = romainNumeral.convert(40);
+    assertThat(actual).isEqualTo("XL");
+  }
+
 }
