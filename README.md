@@ -10,5 +10,7 @@ you can find the kata in different branches (use git branch ...) :
 * string-calculator
 * fooBarQix
 * wordWrap
+* roman-numericals-kata
+* tennis
 
 The README will change depending on the branch in order to display the kata.
