@@ -11,6 +11,7 @@ you can find the kata in different branches (use git branch ...) :
 * fooBarQix
 * wordWrap
 * roman-numericals-kata
+* Roman_To_arabic
 * tennis
 
 The README will change depending on the branch in order to display the kata.
