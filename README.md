@@ -1,17 +1,19 @@
-### TRAINING ###
+Bowling Game Scoring kata
 
-This repository contains the different kata that had been done during the training.
+The game consists of 10 frames as shown above. In each frame the player has two opportunities to knock down 10 pins. The score for the frame is the total number of pins knocked down, plus bonuses for strikes and spares.
 
-All these kata are not complete kata. It is just for sharing purpose.
+A spare is when the player knocks down all 10 pins in two tries. The bonus for that frame is the number of pins knocked down by the next roll. So in frame 3 above, the score is 10 (the total number knocked down) plus a bonus of 5 (the number of pins knocked down on the next roll.)
 
-you can find the kata in different branches (use git branch ...) : 
+A strike is when the player knocks down all 10 pins on his first try. The bonus for that frame is the value of the next two balls rolled.
 
-* leap-year
-* string-calculator
-* fooBarQix
-* wordWrap
-* roman-numericals-kata
-* Roman_To_arabic
-* tennis
+In the tenth frame a player who rolls a spare or strike is allowed to roll the extra balls to complete the frame. However no more than three balls can be rolled in tenth frame.
+Requirements
 
-The README will change depending on the branch in order to display the kata.
+•	Write a class named “Game” that has two methods.
+
+•	Roll(pins : int) is called each time the player rolls a ball. The argument is the number of pins knocked down.
+
+•	Score() : int is called only at the very end of the game. It returns the total score for that game.
+
+Some doubt about your score: "Bowling Genius"
+Bruno
