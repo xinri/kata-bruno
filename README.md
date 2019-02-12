@@ -1,17 +1,24 @@
-### TRAINING ###
+## RPN calculator kata
 
-This repository contains the different kata that had been done during the training.
+An RPN calculator program computes expressions written in RPN (Reverse Polish Notation).
+An RPN expression (or a postfix expression) is one of the following:
+- a number X, in which case the value of the expression is that of X;
+- a sequence of the form E1 E2 O, where E1 and E2 are postfix expressions and O is an arithmetic operation; in this case, the value of the expression is that of E1 O E2.
 
-All these kata are not complete kata. It is just for sharing purpose.
+### The following are RPN expressions:
 
-you can find the kata in different branches (use git branch ...) : 
+   20 5 /               => (20/5)         = 4
 
-* leap-year
-* string-calculator
-* fooBarQix
-* wordWrap
-* roman-numericals-kata
-* Roman_To_arabic
-* tennis
+   4 2 + 3 -            => (4+2)-3        = 3
 
-The README will change depending on the branch in order to display the kata.
+   3 5 8 * 7 + *        => 3*((5*8)+7)    = 141 
+
+### Suggested scenarios
+
+- Given a RpnCalculator when a digit is sent it should display the same digit
+- Given a RpnCalculator when some digits are sent it should display the number formed by those digits
+- Given a RpnCalculator when an enter is sent between two numbers it should display the numbers separated by a newline
+- Given a RpnCalculator when an operation (* + / -) is sent after two numbers it should display the result of that operation
+
+Bruno
+
