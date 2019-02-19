@@ -3,7 +3,7 @@ import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import org.junit.Test;
 
 public class RpnCalculatorShould {
-  
+
   @Test
   public void return_1_when_input_is_1() {
     // given
