@@ -7,11 +7,13 @@ All these kata are not complete kata. It is just for sharing purpose.
 you can find the kata in different branches (use git branch ...) : 
 
 * leap-year
-* string-calculator
+* rpnCalculator
 * fooBarQix
 * wordWrap
-* roman-numericals-kata
+* roman-numerals-kata
 * Roman_To_arabic
 * tennis
+* bowling
+* prime-factor
 
 The README will change depending on the branch in order to display the kata.
